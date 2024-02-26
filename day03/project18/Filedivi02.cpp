@@ -1,14 +1,14 @@
 #include<iostream>
 #include"FIledivi02.h"
 
-Human::Human
+Human::Human;
 
 void Human::showHuman()		//기능: 멤버함수
 {
 	char name[20];
 	int age;
 	char job[20];
-	printf("나는 % d살인  % s % s 입니다.\n",age, job, name);//나는 50살인 백수 홍길동입니다.
+	printf("나는 % d살인  % s % s 입니다.\n", age, job, name);//나는 50살인 백수 홍길동입니다.
 }
 int main()
 {
