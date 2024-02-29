@@ -153,7 +153,19 @@ AA(const AA &copy){
 	- private 영역에 존재하든, public영역에 존재하든 상관없다.
 - static
 ## 7일차
-
+- static
+	- 멤버변수
+	- 멤버함수
+- 상속을 받아들이는 문법 -> : 클래스
+```C++
+	class UnivStudent : public Person // 상속을 받아들이는 문법
+```
+- string타입 : 문자열을 저장할 수 있는 타입
+- protected 선언
+- 세가지 형태의 상속
+	- protected 상속
+	- private 상속
+	- public 상속
 ## 8일차
 
 ## 9일차 
