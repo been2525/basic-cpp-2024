@@ -70,6 +70,7 @@ int main() {
 
         int choice;
         string search;
+        string id;
         cin >> choice;
 
         if (choice == 0) {
@@ -83,7 +84,7 @@ int main() {
             int productChoice;
             cin >> productChoice;
 
-            string id;
+            
             double price;
             string producer;
             string model;
@@ -140,8 +141,15 @@ int main() {
         }
         else if (choice == 3) {
             cout << "상품 조회" << endl;
+            cout << ">";
             cin >> search;
-            if(search == model or )
+            if (search == id)
+            {
+                cout << id << endl;
+            }
+            else
+                cout << "잘못된 id입니다" << endl;
+
 
         }
         else {
