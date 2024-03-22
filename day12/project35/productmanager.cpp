@@ -12,6 +12,7 @@ public:
     Product(const string& id, double price, const string& producer) : id(id), price(price), producer(producer) {}
 
     virtual void printDetails() const = 0;
+    string getId() const { return id; }
 };
 
 class Book : public Product {
@@ -141,16 +142,19 @@ int main() {
         }
         else if (choice == 3) {
             cout << "상품 조회" << endl;
+            cout << "Id를 입력하시오." << endl;
             cout << ">";
             cin >> search;
-            if (search == id)
-            {
-                cout << id << endl;
+            for (int i = 0; i < numProducts; ++i) {
+                if (products[i] -> getId() == search) 
+                {
+                    cout << "상품 정보:" << endl;
+                    products[i]->printDetails();
+                    return 0;
+                }
+              
             }
-            else
-                cout << "잘못된 id입니다" << endl;
-
-
+            cout << "해당 ID의 상품을 찾을 수 없습니다." << endl;
         }
         else {
             cout << "잘못된 선택입니다." << endl;
